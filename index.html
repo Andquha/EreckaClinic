@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="utf-8">
+		<link type="image/x-icon" href="img/favicon.svg" rel="shortcut icon">
+        <link type="Image/x-icon" href="img/favicon.svg" rel="icon">
+        <link type="image/x-icon" href="img/favicon.svg" rel="apple-touch-icon">
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicon.svg">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon.svg">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon.svg">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicon.svg">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicon.svg">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicon.svg">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicon.svg">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicon.svg">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<!-- Bootstrap CSS (jsDelivr CDN) -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Bootstrap Bundle JS (jsDelivr CDN) -->
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		
+		<link rel="stylesheet" href="scss/custom.scss">
+		<link rel="stylesheet" href="css/style.css">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Erica Clinic</title>
+		<script>!function(){"use strict";function o(){var o=window,t=document;if(!("scrollBehavior"in t.documentElement.style&&!0!==o.__forceSmoothScrollPolyfill__)){var l,e=o.HTMLElement||o.Element,r=468,i={scroll:o.scroll||o.scrollTo,scrollBy:o.scrollBy,elementScroll:e.prototype.scroll||n,scrollIntoView:e.prototype.scrollIntoView},s=o.performance&&o.performance.now?o.performance.now.bind(o.performance):Date.now,c=(l=o.navigator.userAgent,new RegExp(["MSIE ","Trident/","Edge/"].join("|")).test(l)?1:0);o.scroll=o.scrollTo=function(){void 0!==arguments[0]&&(!0!==f(arguments[0])?h.call(o,t.body,void 0!==arguments[0].left?~~arguments[0].left:o.scrollX||o.pageXOffset,void 0!==arguments[0].top?~~arguments[0].top:o.scrollY||o.pageYOffset):i.scroll.call(o,void 0!==arguments[0].left?arguments[0].left:"object"!=typeof arguments[0]?arguments[0]:o.scrollX||o.pageXOffset,void 0!==arguments[0].top?arguments[0].top:void 0!==arguments[1]?arguments[1]:o.scrollY||o.pageYOffset))},o.scrollBy=function(){void 0!==arguments[0]&&(f(arguments[0])?i.scrollBy.call(o,void 0!==arguments[0].left?arguments[0].left:"object"!=typeof arguments[0]?arguments[0]:0,void 0!==arguments[0].top?arguments[0].top:void 0!==arguments[1]?arguments[1]:0):h.call(o,t.body,~~arguments[0].left+(o.scrollX||o.pageXOffset),~~arguments[0].top+(o.scrollY||o.pageYOffset)))},e.prototype.scroll=e.prototype.scrollTo=function(){if(void 0!==arguments[0])if(!0!==f(arguments[0])){var o=arguments[0].left,t=arguments[0].top;h.call(this,this,void 0===o?this.scrollLeft:~~o,void 0===t?this.scrollTop:~~t)}else{if("number"==typeof arguments[0]&&void 0===arguments[1])throw new SyntaxError("Value could not be converted");i.elementScroll.call(this,void 0!==arguments[0].left?~~arguments[0].left:"object"!=typeof arguments[0]?~~arguments[0]:this.scrollLeft,void 0!==arguments[0].top?~~arguments[0].top:void 0!==arguments[1]?~~arguments[1]:this.scrollTop)}},e.prototype.scrollBy=function(){void 0!==arguments[0]&&(!0!==f(arguments[0])?this.scroll({left:~~arguments[0].left+this.scrollLeft,top:~~arguments[0].top+this.scrollTop,behavior:arguments[0].behavior}):i.elementScroll.call(this,void 0!==arguments[0].left?~~arguments[0].left+this.scrollLeft:~~arguments[0]+this.scrollLeft,void 0!==arguments[0].top?~~arguments[0].top+this.scrollTop:~~arguments[1]+this.scrollTop))},e.prototype.scrollIntoView=function(){if(!0!==f(arguments[0])){var l=function(o){for(;o!==t.body&&!1===(e=p(l=o,"Y")&&a(l,"Y"),r=p(l,"X")&&a(l,"X"),e||r);)o=o.parentNode||o.host;var l,e,r;return o}(this),e=l.getBoundingClientRect(),r=this.getBoundingClientRect();l!==t.body?(h.call(this,l,l.scrollLeft+r.left-e.left,l.scrollTop+r.top-e.top),"fixed"!==o.getComputedStyle(l).position&&o.scrollBy({left:e.left,top:e.top,behavior:"smooth"})):o.scrollBy({left:r.left,top:r.top,behavior:"smooth"})}else i.scrollIntoView.call(this,void 0===arguments[0]||arguments[0])}}function n(o,t){this.scrollLeft=o,this.scrollTop=t}function f(o){if(null===o||"object"!=typeof o||void 0===o.behavior||"auto"===o.behavior||"instant"===o.behavior)return!0;if("object"==typeof o&&"smooth"===o.behavior)return!1;throw new TypeError("behavior member of ScrollOptions "+o.behavior+" is not a valid value for enumeration ScrollBehavior.")}function p(o,t){return"Y"===t?o.clientHeight+c<o.scrollHeight:"X"===t?o.clientWidth+c<o.scrollWidth:void 0}function a(t,l){var e=o.getComputedStyle(t,null)["overflow"+l];return"auto"===e||"scroll"===e}function d(t){var l,e,i,c,n=(s()-t.startTime)/r;c=n=n>1?1:n,l=.5*(1-Math.cos(Math.PI*c)),e=t.startX+(t.x-t.startX)*l,i=t.startY+(t.y-t.startY)*l,t.method.call(t.scrollable,e,i),e===t.x&&i===t.y||o.requestAnimationFrame(d.bind(o,t))}function h(l,e,r){var c,f,p,a,h=s();l===t.body?(c=o,f=o.scrollX||o.pageXOffset,p=o.scrollY||o.pageYOffset,a=i.scroll):(c=l,f=l.scrollLeft,p=l.scrollTop,a=n),d({scrollable:c,method:a,startTime:h,startX:f,startY:p,x:e,y:r})}}"object"==typeof exports&&"undefined"!=typeof module?module.exports={polyfill:o}:o()}();</script>
+	</head>
+	<body>
+		<header>
+			<!--------------------------- MAIN PAGE ------------------------------->
+			<div class="container main-page" id="mp">
+				
+				<!-- HEADER -->
+				<div class="main-page__header">
+					<div class="main-page__logo">
+						<div class="content">
+							<p>ERICA CLINIC</p>
+						</div>
+					</div>
+					<div class="main-page__menu">
+						<div class="content">
+							<div class="menu-element__language-button">
+								<div class="menu-element__button">
+									<a href="#" class="translate" id="uk">	
+									    <p>UKR</p>
+								    </a>
+									
+									<img src="icon/arrow.png" alt="arrow-icon">
+								</div>
+								<!-- <div class="menu-element__language-dropdown">
+								    <a href="#" class="translate" id="ru">	
+									    <p>RUS</p>
+								    </a>
+								</div> -->
+								
+							</div>
+							<div class="menu-element__phone">
+								<img src="icon/phone-icon.png" alt="slider-icon">
+								<p><a href="tel:+380674003399">+38 067 400 33 99</a></p>
+							</div>
+							<div class="menu-element__consultation" onclick="location.href='#sign-up-page';">
+								<p class="lang" key="menu_consul">Консультація</p>
+							</div>
+
+							<div class="menu-element__roll hamburger">
+								<img src="icon/roll-icon.png" class="menuIcon" alt="slider-icon">
+								<img src="icon/close-icon.png" class="closeIcon" alt="slider-icon">
+							</div>
+							
+						</div>
+					</div>
+				</div>
+
+				<div class="menu">
+					<img src="icon/close-icon.png" class="closeIcon">
+					<ul class="menu-list">
+						<li><a class="menuItem lang" href="#about-us" key="btn_about">Про нас</a></li>
+						<li><a class="menuItem lang" href="#service" key="btn_serv">Послуги</a></li>
+						<li><a class="menuItem lang" href="#story" key="btn_story">Історія здорової посмішки</a></li>
+						<li><a class="menuItem lang" href="#docs1" key="btn_docs">Наші лікарі</a></li>
+						<li><a class="menuItem lang" href="#reviews" key="btn_rews">Відгуки</a></li>
+						<li><a class="menuItem lang" href="#benefits" key="btn_benefs">Чому нам довіряють?</a></li>
+						<li><a class="menuItem lang" href="#sign-up-page" key="btn_form">Записатися на прийом</a></li>
+						<li><a class="menuItem lang" href="#footer" key="btn_footer">Контакти</a></li>
+					</ul>
+				</div>
+				
+
+				<!-- MAIN BODY -->
+				<div class="main-page__body">
+					<div class="main-page__content">
+						<div class="content">
+							<h1 class="lang" key="main_h">Стоматологія Erica Clinic</h1>
+							<p id="info_1" key="main_p" class="lang" >
+								З турботою про ваше здоров'я і чудову посмішку, ми 
+								застосовуємо найкращі досягнення сучасної стоматології 
+								для ефективного та безпечного лікування зубів.
+							</p>
+							<div class="main-page__button" onclick="location.href='#sign-up-page';">
+								<p class="lang"  key="main_button">Записатися на прийом</p>
+							</div>
+						</div>
+					</div>
+					<div class="main-page__scroll">
+						<div class="content">
+							<img src="icon/slider.png" alt="slider-icon">
+						</div>
+					</div>
+				</div>
+
+				<!-- FOOTER -->
+				<div class="main-page__footer">
+					<div class="content">
+						<a href="mailto:ericaclinic@gmail.com">
+						    <img src="icon/mail-icon.png" alt="mail-icon" class="main-page__icon">
+						</a>  
+						<a href="https://www.instagram.com/erica_clinic/" target="_blank">
+						    <img src="icon/instagram-icon.png" alt="mail-icon" class="main-page__icon">
+						</a>
+						<a href="https://www.facebook.com/ericaclinic/" target="_blank">
+						    <img src="icon/facebook-icon.png" alt="mail-icon" class="main-page__icon">
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!----------------------------------- ABOUT US ------------------------------------->
+		<section id="about-us" class="container">
+			<div class="about-page">
+				<div class="about-page__header">
+					<img src="img/topic_bg.png" alt="topic_bg">
+					<h2 class="lang" key="about_h">Про нас</h2>
+				</div>
+				<div class="about-page__body">
+					<div class="about-page__pic">
+						<img src="img/about.png" alt="about">
+					</div>
+					<div class="about-page__content">
+						<h1 class="lang" key="about_h2">Erica Clinic - стоматологія якій довіряють</h1>
+						<p class="lang" key="about_content">
+							Ми створили справжню сімейну клініку, яку вже протягом 15 років відвідують 
+							цілими поколіннями. Ми легко знаходимо спільну мову з усіма клієнтами, адже 
+							в нас працюють найкращі професіонали різного віку. Наша стоматологія - це 
+							особливе місце, де кожного чекає затишок, легке спілкування та дружня атмосфера.
+							<br><br>
+							Erica Clinic - багатопрофільна клініка, яка охоплює майже всі стоматологічні 
+							послуги і гарантує безпеку й безболісне лікування. Наша стоматологія розвивається 
+							кожного дня і вже успішно співпрацює з багатьма IT компаніями та страховими 
+							агенствами, даруючи щасливі посмішки їх працівникам та клієнтам. 
+							<br><br>
+							Ми створили ідеальні умови для вашого комфортного і якісного лікування, 
+							підібрали найкращі сучасні технології, професійну команду і комплексний 
+							підхід, адже ми фокусуємося на головному - на здоров'ї ваших зубів.
+						</p>
+					</div>
+				</div>
+				<div class="about-page__body-narrow">
+					<div class="about-page__pic">
+						<img src="img/about.png" alt="about">
+					</div>
+					<div class="about-page__content">
+						<h1 class="lang" key="about_h2">Erica Clinic - стоматологія якій довіряють</h1>
+						<p class="lang" key="about_content">
+							Ми створили справжню сімейну клініку, яку вже протягом 15 років відвідують 
+							цілими поколіннями. Ми легко знаходимо спільну мову з усіма клієнтами, адже 
+							в нас працюють найкращі професіонали різного віку. Наша стоматологія - це 
+							особливе місце, де кожного чекає затишок, легке спілкування та дружня атмосфера.
+							<br><br>
+							Erica Clinic - багатопрофільна клініка, яка охоплює майже всі стоматологічні 
+							послуги і гарантує безпеку й безболісне лікування. Наша стоматологія розвивається 
+							кожного дня і вже успішно співпрацює з багатьма IT компаніями та страховими 
+							агенствами, даруючи щасливі посмішки їх працівникам та клієнтам. 
+							<br><br>
+							Ми створили ідеальні умови для вашого комфортного і якісного лікування, 
+							підібрали найкращі сучасні технології, професійну команду і комплексний 
+							підхід, адже ми фокусуємося на головному - на здоров'ї ваших зубів.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!------------------------------- SERVICE --------------------------------------->
+		<section>
+			<div id="service" class="container service-page">
+				<div class="service-page__header">
+					<div class="service-page__topic">
+						<h2 class="lang" key="services">Послуги</h2>
+						<img src="img/mesh-gradient.jpg" alt="gradient">
+					</div>
+					<div class="service-page__descrip">
+						<h1 class="lang" key="services_h">Erica Clinic спеціалізується на різних видах лікування</h1>
+						<p class="lang" key="services_content">
+							Наша клініка використовує всі можливості передових технологій
+							та знань у галузі стоматології для комфортного лікування пацієнтів. 
+							Ми лікуємо не заради лікування, а заради здоров’я вашої посмішки.
+						</p>
+					</div>
+				</div>
+				<div class="service-page__body">
+					<div class="service-page__item" id="item-5">
+						<img src="img/card_5.jpg" alt="card">
+						<div class="service-page__button" id="b-5" onclick="hideItem('5')">
+							<p class="lang" key="prof_gigi">Професійна гігієна</p>
+							<img src="icon/add-icon.png" alt="arrow" id="im-5">
+						</div>
+					</div>
+					
+					<div class="service-page__item" id="item-9">
+						<img src="img/card_9.jpg" alt="card">
+						<div class="service-page__button" id="b-9" onclick="hideItem('9')">
+							<p class="lang" key="ortoped">Ортопедія</p>
+							<img src="icon/add-icon.png" alt="arrow" id="im-9">
+						</div>
+					</div>
+					<div class="service-page__item" id="item-8">
+						<img src="img/card10.jpg" alt="card">
+						<div class="service-page__button" id="b-8" onclick="hideItem('8')">
+							<p  class="lang" key="restavr">Реставрація</p>
+							<img src="icon/add-icon.png" id="im-8" alt="arrow">
+						</div>
+					</div>
+					<div class="service-page__item-full" id="itemfull-5">
+						<h1 class="lang" key="prof_gigi">Професійна гігієна</h1>
+						</h1>
+						<!-- <div class="service-page__item-el">
+							<p class="s__name lang" key="pg_1">Зняття зубних выдкладень повитряно-абразивних метод</p>
+							<p class="s__prics">850.00 грн</p>
+						</div> -->
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="pg_2">Зняття зубних выдкладень повитряно-абразивних метод + ультразвукова чистка</p>
+							<p class="s__prics">1300.00 грн</p>
+						</div>
+					</div>
+					<div class="service-page__item-full" id="itemfull-9">
+						<h1 class="lang" key="ortoped">Ортопедія</h1>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="or_1">Коронка тимчасова PMMA </p>
+							<p class="s__prics">1500.00 грн</p>
+						</div>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="or_2">Коронка цирконієва </p>
+							<p class="s__prics">200$</p>
+						</div>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="or_3">Коронка E-max </p>
+							<p class="s__prics">300$</p>
+						</div>
+						<!-- <div class="service-page__item-el">
+							<p class="s__name lang" key="or_4">Накладка E-max</p>
+							<p class="s__prics">5900.00 грн</p>
+						</div> -->
+						<!-- <div class="service-page__item-el">
+							<p class="s__name lang" key="or_5">Коронка цирконієва на імпланті</p>
+							<p class="s__prics">6100.00 грн</p>
+						</div> -->
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="or_6">Вінір Emax Press RomanovLab </p>
+							<p class="s__prics">300$</p>
+						</div>
+					</div>
+					<div class="service-page__item-full" id="itemfull-8">
+						<h1 class="lang" key="restavr">Реставрація</h1>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="re_1">Пломба Estelite Sigma Quick</p>
+							<p class="s__prics">1200.00 грн</p>
+						</div>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="re_2">Пломба Estelite Asteria  </p>
+							<p class="s__prics">1400.00 грн</p>
+						</div>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="re_3">Пломба Vitremer </p>
+							<p class="s__prics"> 850.00 грн.</p>
+						</div>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="re_4">Реставрація (1/2 зуба)</p>
+							<p class="s__prics">1700.00 грн.</p>
+						</div>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="re_5">Реставрація (3/4 зуба)  </p>
+							<p class="s__prics">1900.00 грн</p>
+						</div>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="re_6">Естетична реставрація зуба</p>
+							<p class="s__prics">2500.00 грн.</p>
+						</div>
+					</div>
+					<div class="service-page__item" id="item-7">
+						<img src="img/card_7.jpg">
+						<div class="service-page__button" id="b-7" alt="card" onclick="hideItem('7')">
+							<p class="lang" key="endodont">Ендодонтія</p>
+							<img src="icon/add-icon.png" id="im-7" alt="arrow">
+						</div>
+					</div>
+					<div class="service-page__item" id="item-4">
+						<img src="img/card_4.jpg" >
+						<div class="service-page__button" id="b-4" alt="card" onclick="hideItem('4')">
+							<p class="lang" key="implant">Iмплантація </p>
+							<img src="icon/add-icon.png" id="im-4" alt="arrow">
+						</div>
+					</div>
+					<div class="service-page__item" id="item-1">
+						<img src="img/card_1.jpg" alt="card">
+						<div class="service-page__button" id="b-1" onclick="hideItem('1')">
+							<p class="lang" key="obstezh">Обстеження</p>
+							<img src="icon/add-icon.png" id="im-1" alt="arrow">
+						</div>
+					</div>
+					<div class="service-page__item-full" id="itemfull-7">
+						<h1 class="lang" key="endodont">Ендодонтія</h1>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="en_1">Пломбування одного каналу (AH-plus). </p>
+							<p class="s__prics">600.00 грн</p>
+						</div>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="en_2">Пломбування одного каналу (Гідроксид Са)  </p>
+							<p class="s__prics">250.00 грн.</p>
+						</div>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="en_3">Пломбування одного каналу методом латеральної конденсації гуттаперчі </p>
+							<p class="s__prics">600.00 грн.</p>
+						</div>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="en_4">Пломбування одного каналу методом вертикальної конденсації гуттаперчі </p>
+							<p class="s__prics">1100.00 грн.</p>
+						</div>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="en_5">Інструментальна та медикаментозна обробка одного к/к машинный метод </p>
+							<p class="s__prics">600.00 грн.</p>
+						</div>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="en_6">Інструментальна та медикаментозна обробка одного к/к мікроскопічний метод </p>
+							<p class="s__prics">1600.00 грн. </p>
+						</div>
+					</div>
+					<div class="service-page__item-full" id="itemfull-4">
+						<h1 class="lang" key="implant">Імплантація</h1>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="im_1">Імплантація система Bauers </p>
+							<p class="s__prics">7600.00 грн (220$)</p>
+						</div>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="im_2">Встановлення формувача щелепи Bauers </p>
+							<p class="s__prics">1500.00 грн (30$)</p>
+						</div>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="im_3">Імплант Megagen</p>
+							<p class="s__prics">11400.00 грн (300$)</p>
+						</div>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="im_4">Формирователь десны Megagen </p>
+							<p class="s__prics">1900.00 грн (50$)</p>
+						</div>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="im_5">Імпланти система Straumann (Щвейцарія)</p>
+							<p class="s__prics">22500.00 грн (500$)</p>
+						</div>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="im_6">Формувача десны Straumann (Швейцарія) </p>
+							<p class="s__prics">3500.00 грн (80$)</p>
+						</div>
+					</div>
+					<div class="service-page__item-full" id="itemfull-1">
+						<h1 class="lang" key="obstezh">Обстеження</h1>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="ob_1">Консультація</p>
+							<p class="s__prics">250.00 грн</p>
+						</div>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="ob_2">Оглядовий набір </p>
+							<p class="s__prics">50.00 грн</p>
+						</div>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="ob_3">Анти спід укладання </p>
+							<p class="s__prics">100.00 грн</p>
+						</div>
+					</div>
+					<div class="service-page__item" id="item-6">
+						<img src="img/card_6.jpg" alt="card">
+						<div class="service-page__button" id="b-6" onclick="hideItem('6')">
+							<p class="lang" key="hirurg">Хірургія</p>
+							<img src="icon/add-icon.png" id="im-6" alt="arrow">
+						</div>
+					</div>
+					<div class="service-page__item" id="item-2">
+						<img src="img/card_2.jpg" alt="card">
+						<div class="service-page__button" id="b-2" onclick="hideItem('2')">
+							<p class="lang" key="vidbil">Відбілювання</p>
+							<img src="icon/add-icon.png" id="im-2">
+						</div>
+					</div>
+					<div class="service-page__item" id="item-3">
+						<img src="img/card_3.jpg">
+						<div class="service-page__button" id="b-3" onclick="hideItem('3')">
+							<p class="lang" key="ortodont">Ортодонтія</p>
+							<img src="icon/add-icon.png" alt="arrow" id="im-3">
+						</div>
+					</div>
+					<div class="service-page__item-full" id="itemfull-6">
+						<h1 class="lang" key="hirurg">Хірургія</h1>
+						<!-- <div class="service-page__item-el">
+							<p class="s__name lang" key="hi_1">Видалення однокореневого зуба 1 ст. важкості (1 зуб) </p>
+							<p class="s__prics">300.00 грн.</p>
+						</div>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="hi_2">Видалення багатокореневого зуба 1 ст. важкості (1 зуб) </p>
+							<p class="s__prics">450.00 грн.</p>
+						</div> -->
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="hi_3">Видалення зуба мудрості </p>
+							<p class="s__prics">1000.00 грн.</p>
+						</div>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="hi_4">Атипове видалення одного зуба</p>
+							<p class="s__prics">1900.00 грн.  </p>
+						</div>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="hi_5">Атипове видалення одного зуба з видаленням м'якої тканини/кістки</p>
+							<p class="s__prics">2500.00 грн.  </p>
+						</div>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="hi_6">Атипове видалення одного зуба з коронарно-радіальним розпилом зуба </p>
+							<p class="s__prics">3500.00 грн.  </p>
+						</div>
+					</div>
+					<div class="service-page__item-full" id="itemfull-2">
+						<h1 class="lang" key="vidbil">Відбілювання</h1>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="vi_1">Домашнє </p>
+							<p class="s__prics">4500.00 грн</p>
+						</div>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="vi_2">Офісне magic smile</p>
+							<p class="s__prics">4000.00 грн</p>
+						</div>
+					</div>
+					<div class="service-page__item-full" id="itemfull-3">
+						<h1 class="lang" key="ortodont">Ортодонтія</h1>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="ot_1">Брекет система (з установкою) керамічна 1 щелепа</p>
+							<p class="s__prics">17000.00 грн</p>
+						</div>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="ot_1">Брекет система (з установкою) самолігуюча метал 1 щелепа</p>
+							<p class="s__prics">13000.00 - 16000.00 грн</p>
+						</div>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="ot_2">Брекет-система (з установкою) сапфірова 1 щелепа  </p>
+							<p class="s__prics">18000.00 грн</p>
+						</div>
+						<div class="service-page__item-el">
+							<p class="s__name lang" key="ot_3">Брекет-система (з установкою) самолігуюча естетична 1 щелепа </p>
+							<p class="s__prics">25000.00 грн.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+		<!--------------------------------------- STORY-PAGE ---------------------------------->
+		<section id="story">
+			<div class="container story-page">
+				<div class="story-page__header">
+					<h2 class="lang" key="story_h">Історія здорової посмішки</h2>
+					<img src="img/history_bg.png" alt="arrow">
+				</div>
+				<div class="story-page__body">
+					<div class="story-page__content">
+						<div class="story-page__pic">
+							<img src="img/history_smile.png" alt="pic">
+						</div>
+						<div class="story-page__footer">
+							<div class="story-page__descrip">
+								<h1 class="lang" key="story_descrip">Андрій    |     Ортодонтичне лікування і реставрація</h1>
+								<!-- <p class="lang" key="story_descrip2">	Лікар :  Олексій Юрійович <br> 
+									Тривалість лікування :  3 візита -->
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--------------------------------------- OUT_DOCTORS-PAGE ---------------------------------->
+		<section class="doctors-page" id="docs1">
+			<div class="container">
+				<div class="doctors-page__header">
+					<h2 class="lang" key="doctors_h">Наші лікарі</h2>
+					<img src="img/doctors_bg.png" alt="arrow">
+				</div>
+				
+				<div class="doctors-page__slider">
+					<img src="icon/ar-left.png" href="#imageCarousel" data-slide="prev">
+					<img src="icon/ar-right.png" href="#imageCarousel" data-slide="next">
+				</div>	
+				<div class="row">
+					<div class="col-xs-12">
+						<div id="imageCarousel" class="carousel slide" data-ride="carousel" data-wrap="true">
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="doctors-page__cards">
+										<div class="doctors-page__doc-card">
+											<img src="img/docs/doc1.png">
+											<div class="doctors-page__descrip">
+												<h1 class="lang" key="doc1">Велентій Юлія Юрьевна</h1>
+												<p class="lang" key="doc1d">Доктор - ортодонт</p>
+											</div>
+										</div>
+										<div class="doctors-page__doc-card">
+											<img src="img/docs/doc2.png">
+											<div class="doctors-page__descrip">
+												<h1 class="lang" key="doc2">Бескровна Оксана Генадіївна</h1>
+												<p class="lang" key="doc2d">Лікар - ортодонт</p>
+											</div>
+										</div>
+										<div class="doctors-page__doc-card">
+											<img src="img/docs/doc3.png">
+											<div class="doctors-page__descrip">
+												<h1 class="lang" key="doc3">Дмитрієва Еріка Олексіївна</h1>
+												<p class="lang" key="doc3d">КМН  |  Головний лікар  |  Лікар - стоматолог</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="doctors-page__cards">
+										<div class="doctors-page__doc-card">
+											<img src="img/docs/doc4.png">
+											<div class="doctors-page__descrip">
+												<h1 class="lang" key="doc4">Дмитрієв Антон Юрійовіч</h1>
+												<p class="lang" key="doc4d">Лікар - хірург  |  Ортопед</p>
+											</div>
+										</div>
+										<!-- <div class="doctors-page__doc-card">
+											<img src="img/docs/doc5.png">
+											<div class="doctors-page__descrip">
+												<h1 class="lang" key="doc5">Комаревська Анастасія Олександрівна</h1>
+												<p class="lang" key="doc5d">Лікар - стоматолог</p>
+											</div>
+										</div> -->
+										<!-- <div class="doctors-page__doc-card">
+											<img src="img/docs/doc6.png">
+											<div class="doctors-page__descrip">
+												<h1 class="lang" key="doc6">Ковзік Оксана Яківна</h1>
+												<p class="lang" key="doc6d">Лікар - стоматолог</p>
+											</div>
+										</div> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="doctors-page" id="docs2">
+			<div class="container">
+				<div class="doctors-page__header">
+					<h2 class="lang" key="doctors_h">Наші лікарі</h2>
+					<img src="img/doctors_bg.png" alt="arrow">
+				</div>
+				
+				<div class="doctors-page__slider">
+					<img src="icon/ar-left.png" href="#imageCarousel2" data-slide="prev">
+					<img src="icon/ar-right.png" href="#imageCarousel2" data-slide="next">
+				</div>	
+				<div class="row">
+					<div class="col-xs-12">
+						<div id="imageCarousel2" class="carousel slide" data-ride="carousel" data-wrap="true">
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="doctors-page__doc-card">
+										<img src="img/docs/doc1.png">
+										<div class="doctors-page__descrip">
+											<h1 class="lang" key="doc1">Велентій Юлія Юрьевна</h1>
+											<p class="lang" key="doc1d">Доктор - ортодонт</p>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="doctors-page__doc-card">
+										<img src="img/docs/doc2.png">
+										<div class="doctors-page__descrip">
+											<h1 class="lang" key="doc2">Бескровна Оксана Генадіївна</h1>
+											<p class="lang" key="doc2d">Лікар - ортодонт</p>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="doctors-page__doc-card">
+										<img src="img/docs/doc3.png">
+										<div class="doctors-page__descrip">
+											<h1 class="lang" key="doc3">Дмитрієва Еріка Олексіївна</h1>
+											<p class="lang" key="doc3d">КМН  |  Головний лікар  |  Лікар - стоматолог</p>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="doctors-page__doc-card">
+										<img src="img/docs/doc4.png">
+										<div class="doctors-page__descrip">
+											<h1 class="lang" key="doc4">Дмитрієв Антон Юрійовіч</h1>
+											<p class="lang" key="doc4d">Лікар - хірург  |  Ортопед</p>
+										</div>
+									</div>
+								</div>
+								<!-- <div class="item">
+									<div class="doctors-page__doc-card">
+										<img src="img/docs/doc5.png">
+										<div class="doctors-page__descrip">
+											<h1 class="lang" key="doc5">Комаревська Анастасія Олександрівна</h1>
+											<p class="lang" key="doc5d">Лікар - стоматолог</p>
+										</div>
+									</div>
+								</div> -->
+								<div class="item">
+									<div class="doctors-page__doc-card">
+										<img src="img/docs/doc6.png">
+										<div class="doctors-page__descrip">
+											<h1 class="lang" key="doc6">Ковзік Оксана Яківна</h1>
+											<p class="lang" key="doc6d">Лікар - стоматолог</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!------------------------------------ CERTIFICATES ----------------------------------------->
+		<section class="certificates-page">
+			<div class="container">
+				<div class="owl-carousel owl-theme owl-loaded">
+					<div class="owl-stage-outer">
+						<div class="owl-stage">
+							<div class="owl-item">
+								<img src="img/certificats/cert-1.jpg">
+							</div>
+							<div class="owl-item">
+								<img src="img/certificats/cert-2.jpg">
+							</div>
+							<div class="owl-item">
+								<img src="img/certificats/cert-3.jpg">
+							</div>
+							<div class="owl-item">
+								<img src="img/certificats/cert-4.jpg">
+							</div>
+							<div class="owl-item">
+								<img src="img/certificats/cert-5.jpg">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<!------------------------------------ REVIEWS ----------------------------------------------->
+		<section id="reviews" class="reviews-page">
+			<div class="container">
+				<div class="reviews-page__header">
+					<img src="img/topic_bg.png" alt="topic_bg">
+					<h2 class="lang" key="reviews">Відгуки</h2>
+				</div>
+				<div class="reviews-page__body">
+					<div class="reviews-page__pic">
+						<img src="img/comments_slide.png">
+					</div>
+					<div class="reviews-page__content">
+						<!--
+						
+						<p>
+							Чудова стоматологія, дуже приємний персонал. Відвідувала хірурга Антона Дмітрієва, такого уважного 
+							лікаря я ще не зустрічала. Багато років не могла вирішити свою проблему, а з ним легко й безболістно 
+							вилікувала все за декілька сеансів. Дякую, нарешті я знайшла ідеального стоматолога.
+						</p>
+						<h1>Дарья, 27 років</h1>
+						-->
+						<div class="doctors-page__slider">
+					        <img src="icon/ar-left.png" href="#myCarousel" data-slide="prev">
+					        <img src="icon/ar-right.png" href="#myCarousel" data-slide="next">
+				        </div>
+						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="comment">
+                                        <h1>Olena Savych</h1>
+                                        <p>Хочу выразить слова благодарности доктору Юлии Юрьевне за красивую улыбку и ровные зубы, которые она мне подарила. Юлия Юрьевна установила мне брекеты и осуществляла контроль и корректировку зубов на протяжении двух лет лечения. Так же в Erica Clinic я удаляла 4 зуба мудрости у доктора Антона Юрьевича. Зубы мудрости были очень крупные, но Антон Юрьевич профессионально справился всего за два приема. Удаление прошло без осложнений. Так же хочу выразить слова благодарности доктору Эрике Алексеевне. Обращалась неоднократно для установки и замены пломб. Осталась очень довольна ! Спасибо большое профессионалам в Erica Clinic!!!</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="comment">
+            						    <h1>Sasha V</h1>
+                                        <p>Хочу сказать спасибо за то, что в моей жизни появились вы!
+
+Я всю жизнь до вас смущалась улыбки, хотя по жизни человек я жизнерадостный. Теперь же моя визитная карточка - улыбка во всю ширину!
+
+Я уже прошла и лечение зубов, и ортодонтическое выравнивание зубов и прикуса, отбеливание, а теперь и имплантант. Последнего боялась до жути, потому что именно с этого зуба в детстве и началась история со страхом перед стоматологами. Но! Это совсем не больно, даже весело на приеме)
+
+Эрика Алексеевна, Юлечка и Антон, и все остальные ребята, вы делаете этот мир здоровее, спасибо за ваш профессионализм и невероятную заботу о пациентах!</p>
+                                    </div>
+                                </div>
+                               <div class="item">
+                                    <div class="comment">
+            						    <h1>Yulya Gekhman</h1>
+                                        <p>Это действительно профессионалы. Хожу уже лет 8 и ощущаю не только профессиональный подход, но и искреннюю заботу! Не променяю это место ни на какое другое. За годы в качестве на работе убедилась на собственном опыте, пломбы держатся долго и надёжно. Трепетный, внимательный персонал, душевные врачи, хорошие люди, которые любят свою работу. Нет спешки (немаловажный факт :-))
+Всегда подробно рассказывает что и почему собираемся делать.
+
+Спасибо!!!</p>
+                                    </div>
+                                </div>
+                               <div class="item">
+                                    <div class="comment">
+            						    <h1>Юлия Волкова</h1>
+                                        <p>Очень классная клиника , отдельное спасибо Юлии Юрьевне за зубки , ставила брекеты у неё , «относила» их с огромным удовольствием , теперь я могу улыбаться и не переживать , зубки идеальны ))) это тот случай когда идёшь к врачу и ничего не боишься , удаляла 8-ки, и проходила лечение , всё супер 😊 Побольше вам хороших клиентов!</p>
+                                    </div>
+                                </div>
+                               <div class="item">
+                                    <div class="comment">
+            						    <h1>Юлия Колинюк</h1>
+                                        <p>Совсем недавно удаляли зуб, чего я очень боялась, но доктора не только профессионалы своего дела, но и хорошие психологи, которые понимают твой страх и минимализируют его. Само удаление прошло быстро, аккуратно и безболезненно за что огромное спасибо Антону Юрьевичу и Роману. Так же хотела отметить прекрасную работу администраторов, которые окружили вниманием и заботой даже после процедуры. Это не первая клиника, которую я посещаю, но она однозначно лучшая </p>
+                                    </div>
+                                </div>
+                               <div class="item">
+                                    <div class="comment">
+            						    <h1>Marina Litvin</h1>
+                                        <p>Профессионально вырвали зубы мудрости - челюсть не болела, ничего не опухло и быстро зажило.
+Поставили брекеты, да так, что не было случаев, чтобы хоть один отклеился. 🙃
+Также нашли и полечили те проблемы, которые не были увиденны другими врачами из других клиник.
+Чистку зубов делают аккуратно и тщательно.
+Если есть вопросы или что-то не понятно, все объяснят и подскажут. Спасибо за ваш труд и заботу к клиентам. ♥️</p>
+                                    </div>
+                                </div>
+                               <div class="item">
+                                    <div class="comment">
+            						    <h1>Анна Баранник</h1>
+                                        <p>Безумно довольна, что попала в клинику. Мне удаляли 8-ки, ставили брекет систему и так же просто лечили зубы. Очень внимательный и приятный персонал. Однозначно ставлю пятерку за профессионализм!</p>
+                                    </div>
+                                </div>
+                               <div class="item">
+                                    <div class="comment">
+            						    <h1>Дарья Ермолаева</h1>
+                                        <p>Полечили зубки быстро, не больно и качественно. Приятный персонал, подробно рассказали про каждый этап лечения. Огромный выбор ярких резиночек для брекетов </p>
+                                    </div>
+                                </div>
+                               <div class="item">
+                                    <div class="comment">
+            						    <h1>Татьяна Власенко</h1>
+                                        <p>Здесь спасли меня после неудачного лечения в другой клинике. Огромное спасибо врачу ортодонту Юлии Юрьевне, тк теперь имею шикарную улыбку, о которой так давно мечтала. В этой клинике не чувствуешь себя как на конвейере или как у мясника. Проходила лечение по ортодонтии, успела удалить 4 зуба у Антона Юрьевича(как оказалось это быстро и не больно, он точно маг), лечила зубы и периодически делаю чистку зубов у Оксаны Яковлевны(очень советую, делает все аккуратно)</p>
+                                    </div>
+                                </div>
+                               <div class="item">
+                                    <div class="comment">
+            						    <h1>Владимир Иванченко</h1>
+                                        <p>Удалили 8ки быстро и не больно.
+
+Спустя пару дней врач проверяет все ли в порядке и беспокоится за тебя. Это круто!</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="comment">
+            						    <h1>Вера Гунько</h1>
+                                        <p>
+                                            Мне очень понравилось работа специалистов в клинике. Я пользовалась такими услугами: установка брекет-системы, полное сопровождение, удаление зубов мудрости, чистка. Все прошло на высшем уровне. Врачи внимательные, аккуратные, эмпатичные, заботливые, профессионалы своего дела. Всегда дают рекомендации по домашнему уходу. С удовольствием рекомендую клинику своим друзьям. Установка брекетов — это была лучшая инвестиция в себя при том что у меня были слегка кривые зубы, но после — это +100500 к уверенности в себе. Очень нравятся мои зубки. Благодарю всю команду за их работу.
+                                        </p>
+                                    </div>
+                                </div>
+                                    <ol class="carousel-indicators">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                                    <li data-target="#myCarousel" data-slide-to="6"></li>
+                                    <li data-target="#myCarousel" data-slide-to="7"></li>
+                                    <li data-target="#myCarousel" data-slide-to="8"></li>
+                                    <li data-target="#myCarousel" data-slide-to="9"></li>
+                                    <li data-target="#myCarousel" data-slide-to="10"></li>
+                                </ol>
+        					</div>
+						</div>
+    					
+					
+					</div>
+				</div>
+			</div>
+		</section>
+		<!------------------------------------ BENEFITS ---------------------------------------------->
+		<section id="benefits" class="benefits-page">
+			<div class="container">
+				<div class="benefits-page__header">
+					<div class="benefits-page__topic">
+						<h2 class="lang" key="benefits">Чому нам довіряють?</h2>
+						<img src="img/docs-grad.png" alt="arrow">
+					</div>
+				</div>
+				<div class="benefits-page__body">
+					<div class="benefits-page__item">
+						<h1 class="lang" key="ben1">Сімейність</h1>
+						<p class="lang" key="ben1p">З самого першого дня існування клініки та до сьогодні, нас відвідують цілими сім’ями, приводячи усіх своїх родичей та рекомендуючи друзям.</p>
+					</div>
+					<div class="benefits-page__item">
+						<h1 class="lang" key="ben2">Індивідуальність</h1>
+						<p class="lang" key="ben2p">У різних пацієнтів свої проблеми і болі, але ми однаково уважні до кожного. Ми докладно розповімо про всю специфіку лікування, запропонуємо вам найкращі варіанти і приємні ціни.</p>
+					</div>
+					<div class="benefits-page__item">
+						<h1 class="lang" key="ben3">Атмосфера</h1>
+						<p class="lang" key="ben3p">Наша стоматологія відрізняється своїм особливим настроєм. Вас завжди зустрінуть щирою посмішкою та пригостять смачним чаєм й теплим спілкуванням. </p>
+					</div>
+					<div class="benefits-page__item">
+						<h1 class="lang" key="ben4">Обладнання</h1>
+						<p class="lang" key="ben4p">Професійне обладнання нашої лікарні підбиралось дуже ретельно. Ми використовуємо тільки найсучасніші технології, які забезпечать безболісне та комфортне лікування, адже це для нас головне.</p>
+					</div>
+					<div class="benefits-page__item">
+						<h1 class="lang" key="ben5">Репутація</h1>
+						<p class="lang" key="ben5p">За 15 років існування, стоматологія Erica Clinic  отримала більше 5000 задоволених відгуків. Для нас важливі всі пацієнти і ми гарантуємо якісне лікування для кожного.</p>
+					</div>
+					<div class="benefits-page__item">
+						<h1 class="lang" key="ben6">Лікарі</h1>
+						<p class="lang" key="ben6p">Ми зібрали справжніх професіоналів стоматології, які постійно розвиваються та набувають нові знання  у сучасних методиках лікування.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- SIGN UP -->
+		<script src="src/js/mail-script.js"></script>
+		<script src="src/js/mail-script"></script>
+		<section id="sign-up-page">
+			<div class="container">
+				<h1 class="lang" key="sing_up">Записатися на прийом</h1>
+				<p class="lang" key="sing_up_p">
+					Залиште свої контактні дані і наш адміністратор зв'яжеться з вами протягом робочого часу, щоб вибрати послугу, день і час візиту та надати рекомендації.
+				</p>
+				<div class="wrapper">
+					<form action="#" id="form" class="form__body">
+						<div class="form__item">
+							<input id="formName" type="text" name="name" class="form__input _req" placeholder="Ваше ім’я*">
+						</div>
+						<div class="form__item">
+							<input id="formEmail" type="text" name="email" class="form__input _req" placeholder="Ваш телефон*">
+						</div>
+						<div class="form__item">
+							<input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox_input">
+							<label for="formAgreement" class="form__label" class="lang" key="formagr">Я даю своё согласие на обработку персональных данных</label>
+						</div>
+						<button type="submit" class="form__button lang" key="sign_btn">Відправити</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<!-- CONTAcTS -->
+		<section id="contacts-page" style="cursor: pointer;" onclick="window.open('https://www.google.com/maps/place/ERICA+CLINIC/@48.4300189,35.0424228,16.92z/data=!4m19!1m13!4m12!1m4!2m2!1d30.4056997!2d50.4874296!4e1!1m6!1m2!1s0x40dbfd48af141375:0x980849085a7d315f!2serica+clinic!2m2!1d35.0422535!2d48.4301759!3m4!1s0x40dbfd48af141375:0x980849085a7d315f!8m2!3d48.4301759!4d35.0422535')">
+			<div class="container">
+				<div class="contacts__form" style="cursor: default;" onclick="">
+					<h1>ERICA CLINIC</h1>
+					 <div class="contacts__item">
+						 <img src="icon/geo.png">
+						<p class="lang" key="adres">Дніпро, Гагаріна 103а</p>
+					 </div>
+					 <div class="contacts__item">
+						 <img>
+						<p class="lang" key="graf">Пн - Сб: 8:00 - 20:00<br>Вс: вихідний</p>
+					 </div>
+					 <div class="contacts__item">
+						<img src="icon/phone-icon.png">
+						<p>+38 067 400 33 99</p>
+					</div>
+					<div class="contacts__item">
+						<img src="icon/mail-icon.png">
+						<p>ericaclinic@gmail.com</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer id="footer">
+			<div class="container">
+				<div class="block">
+					<h1>ERICA CLINIC</h1>
+					<h3 class="lang" key="foot_p">З турботою про ваше здоров'я і посмішку</h3>
+					<a href="#sign-up-page">
+						<div class="footer__button lang" key="consul_btn">
+							<p>Консультація</p>
+						</div>
+					</a>
+					<div class="footer__language">
+					    <a href="#contacts-page" class="translate" id="uk">	
+						    <p>UKR</p>
+						</a>
+						<!-- <a href="#contacts-page" class="translate" id="ru">	
+    					    <p>RUS</p>
+					    </a> -->
+					</div>
+					<div class="footer__icons">
+					    <a href="https://www.instagram.com/erica_clinic/" target="_blank">
+                            <img src="icon/instagram-icon-dark.png">
+                        </a>
+                        <a href="https://www.facebook.com/ericaclinic/" target="_blank">
+                            <img src="icon/facebook-icon-dark.png">
+                        </a>
+					</div>
+				</div>
+				<div class="block">
+					<h2 class="lang" key="contacts">Контакти</h2>
+					<div class="footer__item">
+						<img src="icon/geo-dark.png">
+					   <p class="lang" key="adres"><b>Дніпро, Гагаріна 103а</b></p>
+					</div>
+					<div class="footer__item">
+						<img>
+					   <p class="lang" key="graf">Пн - Сб: 8:00 - 20:00<br>Вс: вихідний</p>
+					</div>
+					<div class="footer__item">
+					   <img src="icon/phone-icon-dark.png">
+					   <a href="tel:380674003399">+38 067 400 33 99</a>
+				   </div>
+				   <div class="footer__item">
+					   <img src="icon/mail-icon-dark.png">
+					   <a href="mailto:ericaclinic@gmail.com"><p>ericaclinic@gmail.com</p></a>
+					   
+				   </div>
+				</div>
+				<div class="block">
+					<h2 class="lang" key="services">Послуги</h2>
+					<a href="#service" class="lang" key="diagnos">Діагностика</a>
+					<a href="#service" class="lang" key="vidbil">Відбілювання</a>
+					<a href="#service" class="lang" key="ortodont">Ортодонтія</a>
+					<a href="#service" class="lang" key="implant">Імплантація</a>
+					<a href="#service" class="lang" key="terap">Терапія</a>
+					<a href="#service" class="lang" key="hirurg">Хірургія</a>
+				</div>
+				<div class="block">
+					<h2 class="lang" key="menu">меню</h2>
+					<a href="#service" class="lang" key="services">Послуги</a>
+					<a href="#about-us" class="lang" key="about">Про нас</a>
+					<a href="#docs1" class="lang" key="doctors">Лікарі</a>
+					<a href="#story" class="lang" key="story">До/після</a>
+					<a href="#sign-up-page" class="lang" key="consul">Консультація</a>
+					<a href="contacts-page" class="lang" key="adres3">Адресса</a>
+				</div>
+			</div>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script>
+
+			function hideItem(itemId) {
+				var x = document.getElementById('itemfull-' + itemId);
+				if (x.style.display == "none" || x.style.display == "") {
+					x.style.display = "block";
+					pressButton('b-'+itemId, 'im-'+itemId);
+				} else {
+					x.style.display = "none";
+					hideButton('b-'+itemId, 'im-'+itemId);
+				}
+			}
+			
+			function pressButton(buttonId, imgId) {
+				var button = document.getElementById(buttonId);
+				var im = document.getElementById(imgId);
+				
+				button.style.backgroundColor = '#858585';
+				im.src="icon/sub-icon.png";
+			}
+			function hideButton(buttonId, imgId) {
+				var button = document.getElementById(buttonId);
+				var im = document.getElementById(imgId);
+
+				button.style.backgroundColor = '#5a5a5a';
+				im.src="icon/add-icon.png";
+			}
+
+			$(document).ready(function() {
+				var width = document.body.clientWidth;
+				var owl = $('.owl-carousel');
+				owl.owlCarousel({
+					items: 3,
+					loop: true,
+					autoplay: true,
+					center: true,
+					responsiveClass: true,
+					responsive: {
+						0: {
+							items: 1
+						},
+						800: {
+							items: 3
+						}
+					}
+				})
+			});
+
+			const menu = document.querySelector(".menu");
+			const menuItems = document.querySelectorAll(".menuItem");
+			const hamburger= document.querySelector(".hamburger");
+			const closeIcon= document.querySelector(".closeIcon");
+			const menuIcon = document.querySelector(".menuIcon");
+
+			function toggleMenu() {
+				if (menu.classList.contains("showMenu")) {
+					menu.classList.remove("showMenu");
+					closeIcon.style.display = "none";
+					menuIcon.style.visibility = "visible";
+				} else {
+					menu.classList.add("showMenu");
+					closeIcon.style.display = "block";
+					menuIcon.style.visibility = "hidden";
+				}
+			}
+            hamburger.addEventListener("click", toggleMenu);
+		</script>
+		
+		<script type="text/javascript">
+		    var arrLang = {
+		        'uk' : {
+		            'btn_about' : 'Про нас',
+		            'btn_serv' : 'Послуги',
+		            'btn_story' : 'Історія здорової посмішки',
+		            'btn_docs' : 'Наші лікарі',
+		            'btn_rews' : 'Відгуки',
+		            'btn_benefs' : 'Чому нам довіряють',
+		            'btn_form' : 'Записатися',
+		            'btn_footer' : 'Контакти',
+		            'main_h' : 'Стоматологія Erica Clinic',
+		            'main_p' : 'З турботою про ваше здоров\'я і чудову посмішку, ми застосовуємо найкращі досягнення сучасної стоматології для ефективного та безпечного лікування зубів.',
+		            'main_button' : 'Записатися на прийом',
+		            'menu_consul' : 'Консультація',
+		            'about_h' : 'Про нас',
+		            'about_h2' : 'Erica Clinic - стоматологія якій довіряють',
+		            'about_content' : 'Ми створили справжню сімейну клініку, яку вже протягом 15 років відвідують цілими поколіннями. Ми легко знаходимо спільну мову з усіма клієнтами, адже					в нас працюють найкращі професіонали різного віку. Наша стоматологія - це 						особливе місце, де кожного чекає затишок, легке спілкування та дружня атмосфера. \n\n Erica Clinic - багатопрофільна клініка, яка охоплює майже всі стоматологічні 							послуги і гарантує безпеку й безболісне лікування. Наша стоматологія розвивається 							кожного дня і вже успішно співпрацює з багатьма IT компаніями та страховими агенствами, даруючи щасливі посмішки їх працівникам та клієнтам. \n\n	Ми створили ідеальні умови для вашого комфортного і якісного лікування, підібрали найкращі сучасні технології, професійну команду і комплексний підхід, адже ми фокусуємося на головному - на здоров\'ї ваших зубів.',
+		            'services' : 'Послуги',
+		            'services_h' : 'Erica Clinic спеціалізується на різних видах лікування',
+		            'services_content' : 'Наша клініка використовує всі можливості передових технологій та знань у галузі стоматології для комфортного лікування пацієнтів. Ми лікуємо не заради лікування, а заради здоров’я вашої посмішки.',
+		            'story_h' : 'Історія здорової посмішки',
+		            'story_descrip' : 'Володимир    |     Ортодонтичне лікування і реставрація',
+		            'story_descrip2' : 'Лікар :  Олексій Юрійович |\n Тривалість лікування :  3 візита',
+		            'doctors_h' : 'Наші лікарі',
+		            'doc1': 'Велентій Юлія Юрьевна',
+		            'doc1d' : 'Доктор - ортодонт',
+		            'doc2': 'Бескровна Оксана Генадіївна',
+		            'doc2d' : 'Лікар - ортодонт',
+		            'doc3': 'Дмітрієва Еріка Олексіївна',
+		            'doc3d' : 'КМН  |  Головний лікар  |  Лікар - стоматолог',
+		            'doc4': 'Дмітрієв Антон Юрійовіч',
+		            'doc4d' : 'Лікар - хірург  |  Ортопед',
+		            'doc5': 'Комаревська Анастасія Олександрівна',
+		            'doc5d' : 'Лікар - стоматолог',
+		            'doc6': 'Ковзік Оксана Яківна',
+		            'doc6d' : 'Лікар - стоматолог',
+		            'reviews' : 'Відгуки',
+		            'benefits' : 'Чому нам довіряють?',
+		            'ben1' : 'Сімейність',
+		            'ben1p' : 'З самого першого дня існування клініки та до сьогодні, нас відвідують цілими сім’ями, приводячи усіх своїх родичей та рекомендуючи друзям.',
+		            'ben2' : 'Індивідуальність',
+		            'ben2p' : 'У різних пацієнтів свої проблеми і болі, але ми однаково уважні до кожного. Ми докладно розповімо про всю специфіку лікування, запропонуємо вам найкращі варіанти і приємні ціни.',
+		            'ben3' : 'Атмосфера',
+		            'ben3p' : 'Наша стоматологія відрізняється своїм особливим настроєм. Вас завжди зустрінуть щирою посмішкою та пригостять смачним чаєм й теплим спілкуванням.',
+		            'ben4' : 'Обладнання',
+		            'ben4p' : 'Професійне обладнання нашої лікарні підбиралось дуже ретельно. Ми використовуємо тільки найсучасніші технології, які забезпечать безболісне та комфортне лікування, адже це для нас головне.',
+		            'ben5' : 'Репутація',
+		            'ben5p' : 'За 15 років існування, стоматологія Erica Clinic  отримала більше 5000 задоволених відгуків. Для нас важливі всі пацієнти і ми гарантуємо якісне лікування для кожного.',
+		            'ben6' : 'Лікарі',
+		            'ben6p' : 'Ми зібрали справжніх професіоналів стоматології, які постійно розвиваються та набувають нові знання  у сучасних методиках лікування.',
+		            'sing_up' : 'Записатися на прийом',
+		            'sing_up_p' : 'Залиште свої контактні дані і наш адміністратор зв\'яжеться з вами протягом робочого часу, щоб вибрати послугу, день і час візиту та надати рекомендації.',
+		            'sign_btn' : 'Відправити',
+		            'adres' : 'Дніпро, Гагаріна 103а',
+		            'graf' : 'Пн - Сб: 8:00 - 20:00 | Вс: вихідний',
+		            'foot_p' : 'З турботою про ваше здоров\'я і посмішку',
+		            'consul_btn' : 'Консультація',
+		            'diagnos' : 'Діагностика',
+		            'vidbil' : 'Відбілювання',
+		            'ortodont' : 'Ортодонтія',
+		            'implant' : 'Імплантація',
+		            'terap' : 'Терапія',
+		            'hirurg' : 'Хірургія',
+		            'services' : 'Послуги',
+		            'about' : 'Про нас',
+		            'doctors' : 'Лікарі',
+		            'story' : 'До/після',
+		            'consul' : 'Консультація',
+		            'adres3' : 'Адресса',
+		            
+		            'prof_gigi' : 'Професійна гігієна',
+		            'ortoped' : 'Ортопедія',
+		            'restavr' : 'Реставрація',
+		            'endodont' : 'Ендодонтія',
+		            'implant' : 'Імплантація',
+		            'obstezh' : 'Обстеження',
+		            'hirurg' : 'Хірургія',
+		            'vidbil' : 'Відбілювання',
+		            'ortodont' : 'Ортодонтія',
+		            
+		            'contacts' : 'Контакти',
+		            
+		            'pg_1' : 'Зняття зубних выдкладень повитряно-абразивних метод',
+		            'pg_2' : 'Зняття зубних выдкладень повитряно-абразивних метод + ультразвукова чистка',
+		            
+		            'or_1' : 'Коронка тимчасова PMMA',
+		            'or_2' : 'Коронка цирконієва',
+		            'or_3' : 'Коронка E-max',
+		            'or_4' : 'Накладка E-max',
+		            'or_5' : 'Коронка цирконієва на імпланті',
+		            'or_6' : 'Вінір Emax Press RomanovLab',
+		            
+		            're_1' : 'Пломба Estelite Sigma Quick',
+		            're_2' : 'Пломба Estelite Asteria',
+		            're_3' : 'Пломба Vitremer',
+		            're_4' : 'Реставрація (1/2 зуба)',
+		            're_5' : 'Реставрація (3/4 зуба)',
+		            're_6' : 'Естетична реставрація зуба',
+		            
+		            'en_1' : 'Пломбування одного каналу (AH-plus).',
+		            'en_2' : 'Пломбування одного каналу (Гідроксид Са)',
+		            'en_3' : 'Пломбування одного каналу методом латеральної конденсації гуттаперчі',
+		            'en_4' : 'Пломбування одного каналу методом вертикальної конденсації гуттаперчі',
+		            'en_5' : 'Інструментальна та медикаментозна обробка одного к/к машинный метод',
+		            'en_6' : 'Інструментальна та медикаментозна обробка одного к/к мікроскопічний метод',
+		            
+		            'im_1' : 'Імплантація система Bauers',
+		            'im_2' : 'Встановлення формувача щелепи Bauers',
+		            'im_3' : 'Імплант Megagen',
+		            'im_4' : 'Формирователь десны Megagen',
+		            'im_5' : 'Імпланти система Straumann (Щвейцарія)',
+		            'im_6' : 'Формувача десны Straumann (Швейцарія)',
+		            
+		            'ob_1' : 'Консультація',
+		            'ob_2' : 'Оглядовий набір',
+		            'ob_3' : 'Анти спід укладання',
+		            
+		            'hi_1' : 'Видалення однокореневого зуба 1 ст. важкості (1 зуб)',
+		            'hi_2' : 'Видалення багатокореневого зуба 1 ст. важкості (1 зуб)',
+		            'hi_3' : 'Видалення зуба мудрості',
+		            'hi_4' : 'Атипове видалення одного зуба',
+		            'hi_5' : 'Атипове видалення одного зуба з видаленням м\'якої тканини/кістк',
+		            'hi_6' : 'Атипове видалення одного зуба з коронарно-радіальним розпилом зуба',
+		            
+		            'vi_1' : 'Домашнє',
+		            'vi_2' : 'Офісне magic smile',
+		            
+		            'ot_1' : 'Брекет система (з установкою) керамічна 1 щелепа',
+		            'ot_2' : 'Брекет система (з установкою) самолігуюча метал 1 щелепа',
+		            'ot_3' : 'Брекет-система (з установкою) сапфірова 1 щелепа',
+		            'ot_4' : 'Брекет-система (з установкою) самолігуюча естетична 1 щелепа'
+		        },
+		        'ru' : {
+		            'btn_about' : 'О нас',
+		            'btn_serv' : 'Услуги',
+		            'btn_story' : 'История здоровой улыбки',
+		            'btn_docs' : 'Наши врачи',
+		            'btn_rews' : 'Отзывы',
+		            'btn_benefs' : 'Почему нам доверяют',
+		            'btn_form' : 'Записаться',
+		            'btn_footer' : 'Контакты',
+		            'main_h' : 'Стоматология Erica Clinic',
+		            'main_p' : 'С заботой про ваше здоровье и прекрасную улыбку, мы применяем лучшие достижения современной стоматологии для эффективного и безопасного лфечения зубов.',
+		            'main_button' : 'Записаться на прием',
+		            'menu_consul' : 'Консультация',
+		            'about_h' : 'Про нас',
+		            'about_h2' : 'Erica Clinic - стоматология, которой доверяют',
+		            'about_content' : 'Мы создали настоящую семейную клинику, которую уже 15 лет посещают целыми поколениями. Мы легко находим общий язык со всеми клиентами, ведь у нас работают лучшие профессионалы всех возрастов. Наша стоматология – это особое место, где каждого ждет уют, легкое общение и дружеская атмосфера.Erica Clinic – многопрофильная клиника, которая охватывает почти все стоматологические услуги и гарантирует безопасность и безболезненное лечение. Наша стоматология развивается каждый день и уже успешно сотрудничает со многими IT-компаниями и страховыми агентствами, даря счастливые улыбки их работникам и клиентам. Мы создали идеальные условия для вашего комфортного и качественного лечения, подобрали самые современные технологии, профессиональную команду и комплексный подход, ведь мы фокусируемся на главном – на здоровье ваших зубов.',
+		            'services' : 'Услуги',
+		            'services_h' : 'Erica Clinic специализируется на разных видах лечения',
+		            'services_content' : 'Наша клиника использует все возможности передовых технологий и знаний стоматологии для комфортного лечения пациентов. Мы лечим не ради лечения, а ради здоровья вашей улыбки.',
+		            'story_h' : 'История здорой улыбки',
+		            'story_descrip' : 'Андрей    |     Ортодонтическое лечение и реставрация',
+		            // 'story_descrip2' : 'Врач :  Алексей Юрьевич |\n Продолжительность лечения :  3 визита',
+		            'doctors_h' : 'Наши врачи',
+		            'doc1': 'Валентий Юлия Юрьевна',
+		            'doc1d' : 'Доктор - ортодонт',
+		            'doc2': 'Бескровна Оксана Генадиевна',
+		            'doc2d' : 'Врач - ортодонт',
+		            'doc3': 'Дмытриева Эрика Алексеевна',
+		            'doc3d' : 'Главный врач | Врач - стоматолог',
+		            'doc4': 'Дмытриев Антон Юриевич',
+		            'doc4d' : 'Врач - хирург | Ортопед',
+		            'doc5': 'Комаровская Анастасия Алексеевна',
+		            'doc5d' : 'Врач - стоматолог',
+		            'doc6': 'Ковзик Оксана Яковна',
+		            'doc6d' : 'Врач - стоматолог',
+		            'reviews' : 'Отзывы',
+		            'benefits' : 'Почему нам доверяют?',
+		            'ben1' : 'Семейность',
+		            'ben1p' : 'С самого первого дня существования клиники и по сей день, нас посещают целыми семьями, приводя всех своих родственников и рекомендуя друзьям.',
+		            'ben2' : 'Индивидуальность',
+		            'ben2p' : 'У разных пациентов свои проблемы и боли, но мы одинаково внимательны к каждому. Мы подробно расскажем о всей специфике лечения, предложим вам самые лучшие варианты и приятные цены.',
+		            'ben3' : 'Атмосфера',
+		            'ben3p' : 'Наша стоматология отличается своим особым настроением. Вас всегда встретят искренней улыбкой и угостят вкусным чаем и теплым общением.',
+		            'ben4' : 'Оборудование',
+		            'ben4p' : 'Профессиональное оборудование нашей клиники подбиралось очень тщательно. Мы используем только самые современные технологии, которые обеспечат безболезненное и комфортное лечение.',
+		            'ben5' : 'Репутация',
+		            'ben5p' : 'За 15 лет существования стоматология Erica Clinic получила более 5000 довольных отзывов. Для нас важны все пациенты, и мы гарантируем качественное лечение для каждого.',
+		            'ben6' : 'Врачи',
+		            'ben6p' : 'Мы собрали настоящих профессионалов стоматологии, которые постоянно развиваются и приобретают новые знания в современных методиках лечения.',
+		            'sing_up' : 'Записаться на прием',
+		            'sing_up_p' : 'Оставьте свои контактные данные и наш администратор свяжется с вами в течение рабочего времени, чтобы выбрать услугу, день, время визита и предоставить рекомендации.',
+		            'sign_btn' : 'Отправить',
+		            'adres' : 'Днепр, Гагарина 103а',
+		            'graf' : 'Пн - Сб: 8:00 - 20:00 | Вс: выходной',
+		            'foot_p' : 'С заботой про ваше здоровье и улыбку',
+		            'consul_btn' : 'Консультация',
+		            'diagnos' : 'Диагностика',
+		            'vidbil' : 'Отбеливание',
+		            'ortodont' : 'Ортоппедия',
+		            'implant' : 'Имплантация',
+		            'terap' : 'Терапия',
+		            'hirurg' : 'Хирургия',
+		            'services' : 'Услуги',
+		            'about' : 'Про нас',
+		            'doctors' : 'Врачи',
+		            'story' : 'До/после',
+		            'consul' : 'Консультация',
+		            'adres3' : 'Адрес',
+		            
+		            'prof_gigi' : 'Проф. гигиена',
+		            'ortoped' : 'Ортопедия',
+		            'restavr' : 'Реставрация',
+		            'endodont' : 'Ендодонтия',
+		            'implant' : 'Имплантация',
+		            'obstezh' : 'Обследование',
+		            'hirurg' : 'Хирургия',
+		            'vidbil' : 'Отбеливание',
+		            'ortodont' : 'Ортодонтия',
+		            
+		            'contacts' : 'Контакты',
+		            
+		            'pg_1' : 'Снятие зубных изложений воздушно-абразивных метод',
+                    'pg_2' : 'Снятие зубных изложений воздушно-абразивный метод + ультразвуковая чистка',
+		            
+		            'or_1' : 'коронка временная  PMMA',
+		            'or_2' : 'Коронка циркониевая',
+		            'or_3' : 'Коронка E-max',
+		            'or_4' : 'Накладка E-max',
+		            'or_5' : 'Коронка циркониевая на импланте',
+		            'or_6' : 'Винир Emax Press RomanovLab',
+		            
+		            're_1' : 'Пломба Estelite Sigma Quick',
+		            're_2' : 'Пломба Estelite Asteria',
+		            're_3' : 'Пломба Vitremer',
+		            're_4' : 'Реставрация (1/2 зуба)',
+		            're_5' : 'Реставрация (3/4 зуба)',
+		            're_6' : 'Эстетическая  реставрация зуба',
+		            
+		            'en_1' : 'Пломбирование одного канала (AH-plus).',
+                    'en_2' : 'Пломбирование одного канала (Гидроксид Са)',
+                    'en_3' : 'Пломбирование одного канала методом латеральной конденсации гуттаперчи',
+                    'en_4' : 'Пломбирование одного канала методом вертикальной конденсации гуттаперчи',
+                    'en_5' : 'Инструментальная и медикаментозная обработка одного к/у машинный метод',
+                    'en_6' : 'Инструментальная и медикаментозная обработка одного к/у микроскопический метод',
+                    
+                    'im_1' : 'Имплантация система Bauers',
+                    'im_2' : 'Установка формирователя челюсти Bauers',
+                    'im_3' : 'Имплант Megagen',
+                    'im_4' : 'Формирователь десны Megagen',
+                    'im_5' : 'Импланты Straumann (Щвейцария)',
+                    'im_6' : 'Формировщик десны Straumann (Швейцария)',
+                    
+                    'ob_1' : 'Консультация',
+                    'ob_2' : 'Обзорный набор',
+                    'ob_3' : 'Анти спид укладки',
+                    
+                    'hi_1' : 'Удаление однокоренного зуба 1 ст. тяжести (1 зуб)',
+                    'hi_2' : 'Удаление многокорневого зуба 1 ст. тяжести (1 зуб)',
+                    'hi_3' : 'Удаление зуба мудрости',
+                    'hi_4' : 'Атипическое удаление одного зуба',
+                    'hi_5' : 'Атипическое удаление одного зуба с удалением мягкой ткани/кост',
+                    'hi_6' : 'Атипическое удаление одного зуба с коронарно-радиальным распилом зуба',
+                    
+                    'vi_1' : 'Домашнее',
+                    'vi_2' : 'Офисное magic smile',
+                    
+                    'ot_1' : 'Брекет система (с установкой) керамическая 1 челюсть',
+                    'ot_2' : 'Брекет система (с установкой) самолигирующая металл 1 челюсть',
+                    'ot_3' : 'Брекет-система (с установкой) сапфировая 1 челюсть',
+                    'ot_4' : 'Брекет-система (с установкой) самолигирующая эстетическая челюсть'
+		        }
+		    };
+		    $(function(){
+		       $('.translate').click(function(){
+		           var lang = $(this).attr('id');
+		           
+		           $('.lang').each(function(index, element){
+		              $(this).text(arrLang[lang][$(this).attr('key')]); 
+		           });
+		       });
+		    });
+		</script>
+	</body>
+</html>
